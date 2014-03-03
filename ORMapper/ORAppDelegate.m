@@ -7,6 +7,12 @@
 //
 
 #import "ORAppDelegate.h"
+#import "ORMapper.h"
+
+
+#import "User.h"
+#import "Book.h"
+#import "UserHasBooks.h"
 
 @implementation ORAppDelegate
 
@@ -16,6 +22,73 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    NSString *docsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *dbPath   = [docsPath stringByAppendingPathComponent:@"test.db"];
+//    NSString *path = dbPath;
+
+    NSURL *url = [NSURL fileURLWithPath:dbPath];
+
+    [ORDatabase connect:url];
+
+    [ORDatabase findSQL:@"PRAGMA foreign_keys" args:nil process:^id(ORCursor *cursor) {
+        if (cursor.next) {
+            NSLog(@"%@", cursor.result);
+        }
+        return nil;
+    }];
+    [ORDatabase executeSQL:@"PRAGMA foreign_keys = ON;" args:nil];
+
+    [ORDatabase findSQL:@"PRAGMA foreign_keys" args:nil process:^id(ORCursor *cursor) {
+        if (cursor.next) {
+            NSLog(@"%@", cursor.result);
+        }
+        return nil;
+    }];
+    [ORDatabase executeSQL:@"CREATE TABLE IF NOT EXISTS User (uuid TEXT PRIMARY KEY, name TEXT)" args:nil];
+    [ORDatabase executeSQL:@"CREATE TABLE IF NOT EXISTS Book (uuid TEXT PRIMARY KEY, name TEXT, auther_id TEXT, FOREIGN KEY(auther_id) REFERENCES User(uuid) ON DELETE SET NULL)" args:nil];
+    [ORDatabase executeSQL:@"CREATE TABLE IF NOT EXISTS User_has_Books (User_id TEXT, Book_id TEXT, FOREIGN KEY(User_id) REFERENCES User(uuid) ON DELETE CASCADE, FOREIGN KEY(Book_id) REFERENCES Book(uuid) ON DELETE CASCADE)" args:nil];
+
+
+//    [ORDatabase executeSQL:@"INSERT INTO User VALUES('aaa', 'name'" args:nil];
+
+//    User *user = [[User alloc] initWithValues:@{@"name": @"test"}];
+//    [user save];
+//
+    User *user = [User findAll][0];
+    [user delete];
+
+//    [[[Book alloc] initWithValues:@{@"name": @"name",
+//                                    @"auther_id": user.uuid}] save];
+//    [ORDatabase executeSQL:@"INSERT INTO Book (uuid,name,auther_id) VALUES('test', 'name', 'aaa'" args:nil];
+
+//    User *user1 = [User findBy:@"name" value:@"user1"];
+//    if (user1 == nil) {
+//        user1 = [[User alloc] initWithValues:@{@"name": @"user1"}];
+//        [user1 save];
+//    }
+//
+//    User *user2 = nil;
+//    if (user2 == nil) {
+//        user2 = [[User alloc] initWithValues:@{@"name": @"user2"}];
+//        [user2 save];
+//    }
+//
+//    Book *book1 = [Book findBy:@"name" value:@"book1"];
+//    if (book1 == nil) {
+//        book1 = [[Book alloc] initWithValues:@{@"name": @"book1"}];
+//        [book1 save];
+//    }
+//
+//    NSLog(@"ref %@", user1.books.ref);
+////    [user1.books add:book1];
+//    user1.books.ref = @[book1];
+//
+////    [user1 save];
+//
+//
+//    [user1 delete];
+
     return YES;
 }
 

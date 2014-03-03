@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31733C2320FA4E5798F3CEA9 /* libPods-ORMapperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091B34DC49A0434A96DBA9E0 /* libPods-ORMapperTests.a */; };
 		4A0031E718A153170049E86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0031E618A153170049E86C /* Foundation.framework */; };
 		4A0031E918A153170049E86C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0031E818A153170049E86C /* CoreGraphics.framework */; };
 		4A0031EB18A153170049E86C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0031EA18A153170049E86C /* UIKit.framework */; };
@@ -18,7 +19,30 @@
 		4A00320118A153170049E86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0031E618A153170049E86C /* Foundation.framework */; };
 		4A00320218A153170049E86C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0031EA18A153170049E86C /* UIKit.framework */; };
 		4A00320A18A153170049E86C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A00320818A153170049E86C /* InfoPlist.strings */; };
-		4A00320C18A153170049E86C /* ORMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00320B18A153170049E86C /* ORMapperTests.m */; };
+		4A00321B18A1535D0049E86C /* ORTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00321A18A1535D0049E86C /* ORTable.m */; };
+		4A00321C18A1535D0049E86C /* ORTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00321A18A1535D0049E86C /* ORTable.m */; };
+		4A00321F18A155040049E86C /* OREntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00321E18A155040049E86C /* OREntity.m */; };
+		4A00322018A155040049E86C /* OREntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00321E18A155040049E86C /* OREntity.m */; };
+		4A00322318A155E40049E86C /* ORRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00322218A155E40049E86C /* ORRelation.m */; };
+		4A00322418A155E40049E86C /* ORRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00322218A155E40049E86C /* ORRelation.m */; };
+		4A00327118A3D57C0049E86C /* ORCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327018A3D57C0049E86C /* ORCache.m */; };
+		4A00327218A3D57C0049E86C /* ORCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327018A3D57C0049E86C /* ORCache.m */; };
+		4A00327618A3E2470049E86C /* ORDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327518A3E2470049E86C /* ORDatabase.m */; };
+		4A00327718A3E2470049E86C /* ORDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327518A3E2470049E86C /* ORDatabase.m */; };
+		4A00327A18A3E3940049E86C /* ORCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327918A3E3940049E86C /* ORCursor.m */; };
+		4A00327B18A3E3940049E86C /* ORCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00327918A3E3940049E86C /* ORCursor.m */; };
+		4A00329718AA34050049E86C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329618AA34050049E86C /* User.m */; };
+		4A00329818AA34050049E86C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329618AA34050049E86C /* User.m */; };
+		4A00329B18AA34120049E86C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329A18AA34120049E86C /* Book.m */; };
+		4A00329C18AA34120049E86C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329A18AA34120049E86C /* Book.m */; };
+		4A00329F18AA34300049E86C /* UserHasBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329E18AA34300049E86C /* UserHasBooks.m */; };
+		4A0032A018AA34300049E86C /* UserHasBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00329E18AA34300049E86C /* UserHasBooks.m */; };
+		4A2D8C4118B8E74400466A48 /* OREntityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2D8C4018B8E74400466A48 /* OREntityTests.m */; };
+		4A6462CE18B60EE10057F86F /* ORFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6462CD18B60EE10057F86F /* ORFuture.m */; };
+		4A6462CF18B60EE10057F86F /* ORFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6462CD18B60EE10057F86F /* ORFuture.m */; };
+		4ACE636318B8FDEE00B4FB6B /* OREntityIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE636218B8FDEE00B4FB6B /* OREntityIdentifier.m */; };
+		4ACE636418B8FDEE00B4FB6B /* OREntityIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE636218B8FDEE00B4FB6B /* OREntityIdentifier.m */; };
+		EAE68692B8164DB384C9C0BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097EFFF52D7E4B318775D767 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091B34DC49A0434A96DBA9E0 /* libPods-ORMapperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORMapperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		097EFFF52D7E4B318775D767 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0031E318A153170049E86C /* ORMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0031E618A153170049E86C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A0031E818A153170049E86C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +73,38 @@
 		4A0031FF18A153170049E86C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4A00320718A153170049E86C /* ORMapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ORMapperTests-Info.plist"; sourceTree = "<group>"; };
 		4A00320918A153170049E86C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4A00320B18A153170049E86C /* ORMapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORMapperTests.m; sourceTree = "<group>"; };
+		4A00321918A1535D0049E86C /* ORTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTable.h; sourceTree = "<group>"; };
+		4A00321A18A1535D0049E86C /* ORTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTable.m; sourceTree = "<group>"; };
+		4A00321D18A155040049E86C /* OREntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OREntity.h; sourceTree = "<group>"; };
+		4A00321E18A155040049E86C /* OREntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OREntity.m; sourceTree = "<group>"; };
+		4A00322118A155E40049E86C /* ORRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRelation.h; sourceTree = "<group>"; };
+		4A00322218A155E40049E86C /* ORRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRelation.m; sourceTree = "<group>"; };
+		4A00326F18A3D57C0049E86C /* ORCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORCache.h; sourceTree = "<group>"; };
+		4A00327018A3D57C0049E86C /* ORCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORCache.m; sourceTree = "<group>"; };
+		4A00327418A3E2470049E86C /* ORDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORDatabase.h; sourceTree = "<group>"; };
+		4A00327518A3E2470049E86C /* ORDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORDatabase.m; sourceTree = "<group>"; };
+		4A00327818A3E3940049E86C /* ORCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORCursor.h; sourceTree = "<group>"; };
+		4A00327918A3E3940049E86C /* ORCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORCursor.m; sourceTree = "<group>"; };
+		4A00327C18A5E53E0049E86C /* ORMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMacros.h; sourceTree = "<group>"; };
+		4A00328018A5F9280049E86C /* ORDatabase+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORDatabase+private.h"; sourceTree = "<group>"; };
+		4A00328418A6539B0049E86C /* ORCursor+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORCursor+private.h"; sourceTree = "<group>"; };
+		4A00328818A7B3650049E86C /* ORMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORMapper.h; sourceTree = "<group>"; };
+		4A00328C18A7CC920049E86C /* OREntity+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OREntity+private.h"; sourceTree = "<group>"; };
+		4A00329018A7E6810049E86C /* ORTable+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORTable+private.h"; sourceTree = "<group>"; };
+		4A00329518AA34050049E86C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4A00329618AA34050049E86C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4A00329918AA34120049E86C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		4A00329A18AA34120049E86C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		4A00329D18AA34300049E86C /* UserHasBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHasBooks.h; sourceTree = "<group>"; };
+		4A00329E18AA34300049E86C /* UserHasBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHasBooks.m; sourceTree = "<group>"; };
+		4A0032A618AE37CD0049E86C /* ORRelation+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORRelation+private.h"; sourceTree = "<group>"; };
+		4A2D8C4018B8E74400466A48 /* OREntityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OREntityTests.m; sourceTree = "<group>"; };
+		4A6462CC18B60EE10057F86F /* ORFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORFuture.h; sourceTree = "<group>"; };
+		4A6462CD18B60EE10057F86F /* ORFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORFuture.m; sourceTree = "<group>"; };
+		4ACE636118B8FDEE00B4FB6B /* OREntityIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OREntityIdentifier.h; sourceTree = "<group>"; };
+		4ACE636218B8FDEE00B4FB6B /* OREntityIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OREntityIdentifier.m; sourceTree = "<group>"; };
+		A993B16BA6F743BA895D6098 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EAC842D9FEB24A97AEFB6739 /* Pods-ORMapperTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORMapperTests.xcconfig"; path = "Pods/Pods-ORMapperTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,7 @@
 				4A0031E918A153170049E86C /* CoreGraphics.framework in Frameworks */,
 				4A0031EB18A153170049E86C /* UIKit.framework in Frameworks */,
 				4A0031E718A153170049E86C /* Foundation.framework in Frameworks */,
+				EAE68692B8164DB384C9C0BD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +126,7 @@
 				4A00320018A153170049E86C /* XCTest.framework in Frameworks */,
 				4A00320218A153170049E86C /* UIKit.framework in Frameworks */,
 				4A00320118A153170049E86C /* Foundation.framework in Frameworks */,
+				31733C2320FA4E5798F3CEA9 /* libPods-ORMapperTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +136,13 @@
 		4A0031DA18A153170049E86C = {
 			isa = PBXGroup;
 			children = (
+				4A00321518A153210049E86C /* Classes */,
 				4A0031EC18A153170049E86C /* ORMapper */,
 				4A00320518A153170049E86C /* ORMapperTests */,
 				4A0031E518A153170049E86C /* Frameworks */,
 				4A0031E418A153170049E86C /* Products */,
+				A993B16BA6F743BA895D6098 /* Pods.xcconfig */,
+				EAC842D9FEB24A97AEFB6739 /* Pods-ORMapperTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +162,8 @@
 				4A0031E818A153170049E86C /* CoreGraphics.framework */,
 				4A0031EA18A153170049E86C /* UIKit.framework */,
 				4A0031FF18A153170049E86C /* XCTest.framework */,
+				097EFFF52D7E4B318775D767 /* libPods.a */,
+				091B34DC49A0434A96DBA9E0 /* libPods-ORMapperTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +171,7 @@
 		4A0031EC18A153170049E86C /* ORMapper */ = {
 			isa = PBXGroup;
 			children = (
+				4A00329418AA33EB0049E86C /* models */,
 				4A0031F518A153170049E86C /* ORAppDelegate.h */,
 				4A0031F618A153170049E86C /* ORAppDelegate.m */,
 				4A0031F818A153170049E86C /* Images.xcassets */,
@@ -129,8 +194,8 @@
 		4A00320518A153170049E86C /* ORMapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A00320B18A153170049E86C /* ORMapperTests.m */,
 				4A00320618A153170049E86C /* Supporting Files */,
+				4A2D8C4018B8E74400466A48 /* OREntityTests.m */,
 			);
 			path = ORMapperTests;
 			sourceTree = "<group>";
@@ -144,6 +209,97 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A00321518A153210049E86C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A0032A118ABE13A0049E86C /* Query */,
+				4A00327318A3E2320049E86C /* Database */,
+				4A00326E18A3D54B0049E86C /* Cache */,
+				4A00321818A1534D0049E86C /* Relation */,
+				4A00321718A153440049E86C /* Entity */,
+				4A00321618A1533C0049E86C /* Table */,
+				4A00327C18A5E53E0049E86C /* ORMacros.h */,
+				4A00328818A7B3650049E86C /* ORMapper.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A00321618A1533C0049E86C /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				4A00321918A1535D0049E86C /* ORTable.h */,
+				4A00321A18A1535D0049E86C /* ORTable.m */,
+				4A00329018A7E6810049E86C /* ORTable+private.h */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		4A00321718A153440049E86C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A00321D18A155040049E86C /* OREntity.h */,
+				4A00321E18A155040049E86C /* OREntity.m */,
+				4A00328C18A7CC920049E86C /* OREntity+private.h */,
+				4ACE636118B8FDEE00B4FB6B /* OREntityIdentifier.h */,
+				4ACE636218B8FDEE00B4FB6B /* OREntityIdentifier.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		4A00321818A1534D0049E86C /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				4A00322118A155E40049E86C /* ORRelation.h */,
+				4A00322218A155E40049E86C /* ORRelation.m */,
+				4A0032A618AE37CD0049E86C /* ORRelation+private.h */,
+			);
+			name = Relation;
+			sourceTree = "<group>";
+		};
+		4A00326E18A3D54B0049E86C /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				4A00326F18A3D57C0049E86C /* ORCache.h */,
+				4A00327018A3D57C0049E86C /* ORCache.m */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		4A00327318A3E2320049E86C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4A00327418A3E2470049E86C /* ORDatabase.h */,
+				4A00327518A3E2470049E86C /* ORDatabase.m */,
+				4A00328018A5F9280049E86C /* ORDatabase+private.h */,
+				4A00327818A3E3940049E86C /* ORCursor.h */,
+				4A00327918A3E3940049E86C /* ORCursor.m */,
+				4A00328418A6539B0049E86C /* ORCursor+private.h */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		4A00329418AA33EB0049E86C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4A00329518AA34050049E86C /* User.h */,
+				4A00329618AA34050049E86C /* User.m */,
+				4A00329918AA34120049E86C /* Book.h */,
+				4A00329A18AA34120049E86C /* Book.m */,
+				4A00329D18AA34300049E86C /* UserHasBooks.h */,
+				4A00329E18AA34300049E86C /* UserHasBooks.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		4A0032A118ABE13A0049E86C /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				4A6462CC18B60EE10057F86F /* ORFuture.h */,
+				4A6462CD18B60EE10057F86F /* ORFuture.m */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A00320F18A153170049E86C /* Build configuration list for PBXNativeTarget "ORMapper" */;
 			buildPhases = (
+				28ED387221E546F7BC7229F5 /* Check Pods Manifest.lock */,
 				4A0031DF18A153170049E86C /* Sources */,
 				4A0031E018A153170049E86C /* Frameworks */,
 				4A0031E118A153170049E86C /* Resources */,
+				04DD70253DFD4BB7BCAD67E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,9 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A00321218A153170049E86C /* Build configuration list for PBXNativeTarget "ORMapperTests" */;
 			buildPhases = (
+				E9383037DF4D4C56BDC0AC46 /* Check Pods Manifest.lock */,
 				4A0031FA18A153170049E86C /* Sources */,
 				4A0031FB18A153170049E86C /* Frameworks */,
 				4A0031FC18A153170049E86C /* Resources */,
+				5B264905881C4E00B00241B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +395,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DD70253DFD4BB7BCAD67E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28ED387221E546F7BC7229F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B264905881C4E00B00241B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ORMapperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9383037DF4D4C56BDC0AC46 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A0031DF18A153170049E86C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A00329B18AA34120049E86C /* Book.m in Sources */,
+				4A00321B18A1535D0049E86C /* ORTable.m in Sources */,
 				4A0031F318A153170049E86C /* main.m in Sources */,
+				4A00329F18AA34300049E86C /* UserHasBooks.m in Sources */,
+				4A00329718AA34050049E86C /* User.m in Sources */,
+				4ACE636318B8FDEE00B4FB6B /* OREntityIdentifier.m in Sources */,
+				4A00322318A155E40049E86C /* ORRelation.m in Sources */,
+				4A00327118A3D57C0049E86C /* ORCache.m in Sources */,
+				4A00327A18A3E3940049E86C /* ORCursor.m in Sources */,
+				4A00327618A3E2470049E86C /* ORDatabase.m in Sources */,
 				4A0031F718A153170049E86C /* ORAppDelegate.m in Sources */,
+				4A6462CE18B60EE10057F86F /* ORFuture.m in Sources */,
+				4A00321F18A155040049E86C /* OREntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +483,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A00320C18A153170049E86C /* ORMapperTests.m in Sources */,
+				4A00329818AA34050049E86C /* User.m in Sources */,
+				4A00329C18AA34120049E86C /* Book.m in Sources */,
+				4A00322018A155040049E86C /* OREntity.m in Sources */,
+				4A00327218A3D57C0049E86C /* ORCache.m in Sources */,
+				4A2D8C4118B8E74400466A48 /* OREntityTests.m in Sources */,
+				4ACE636418B8FDEE00B4FB6B /* OREntityIdentifier.m in Sources */,
+				4A00322418A155E40049E86C /* ORRelation.m in Sources */,
+				4A00321C18A1535D0049E86C /* ORTable.m in Sources */,
+				4A00327B18A3E3940049E86C /* ORCursor.m in Sources */,
+				4A0032A018AA34300049E86C /* UserHasBooks.m in Sources */,
+				4A6462CF18B60EE10057F86F /* ORFuture.m in Sources */,
+				4A00327718A3E2470049E86C /* ORDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +602,7 @@
 		};
 		4A00321018A153170049E86C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A993B16BA6F743BA895D6098 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -370,6 +616,7 @@
 		};
 		4A00321118A153170049E86C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A993B16BA6F743BA895D6098 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -383,6 +630,7 @@
 		};
 		4A00321318A153170049E86C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC842D9FEB24A97AEFB6739 /* Pods-ORMapperTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ORMapper.app/ORMapper";
@@ -406,6 +654,7 @@
 		};
 		4A00321418A153170049E86C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC842D9FEB24A97AEFB6739 /* Pods-ORMapperTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ORMapper.app/ORMapper";
@@ -442,6 +691,7 @@
 				4A00321118A153170049E86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A00321218A153170049E86C /* Build configuration list for PBXNativeTarget "ORMapperTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +700,7 @@
 				4A00321418A153170049E86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

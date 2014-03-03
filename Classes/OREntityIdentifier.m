@@ -1,0 +1,13 @@
+//
+//  OREntityIdentifier.m
+//  ORMapper
+//
+//  Created by 林 達也 on 2014/02/23.
+//  Copyright (c) 2014年 林 達也. All rights reserved.
+//
+
+#import "OREntityIdentifier.h"
+
+@implementation OREntityIdentifier
+
+@end
